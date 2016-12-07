@@ -8,7 +8,8 @@ This is a manual on how you can test your DEP environment without the need of co
 
 _Pre-reqs.:_
 * A DEP enrolled Mac
-* VMWare Fusion https://github.com/chilcote/vfuse
+* VMWare Fusion
+* vfuse https://github.com/chilcote/vfuse
 * AutoDMG https://github.com/MagerValp/AutoDMG
 * Some terminal knowledge
 
