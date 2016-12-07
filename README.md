@@ -22,9 +22,9 @@ _Pre-reqs.:_
   * "Show package content" on file "/Users/userid/Documents/Virtual Machines/*newly created VM-file.vmdk"
   * Open .vmx file with *text editor of your choice
   * Find the following information from a DEP computer:
-    * board-id (var_ID=$(ioreg -p IODeviceTree -r -n / -d 1 | grep board-id);var_ID=${var_ID##*<\"};var_ID=${var_ID%%\">};echo $var_ID)
-    * hw.model (sysctl hw.model) (only the model, not "hw.model")
-    * serialNumber (system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')
+    * board-id `var_ID=$(ioreg -p IODeviceTree -r -n / -d 1 | grep board-id);var_ID=${var_ID##*<\"};var_ID=${var_ID%%\">};echo $var_ID`
+    * hw.model `sysctl hw.model` (only the model, not "hw.model")
+    * serialNumber `system_profiler SPHardwareDataType | awk '/Serial/ {print $4}'`
   * Add the following lines, and save the file:
     * board-id.reflectHost = "FALSE"
     * board-id = "board-id"
@@ -47,4 +47,4 @@ sudo touch /var/db/MDM_CKSupportRequestsFromDaemon
 sudo shutdown -r now
 ```
 
-5. After the machine has rebooted, DEP should now be active
+After the machine has rebooted, DEP should now be active
