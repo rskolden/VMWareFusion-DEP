@@ -24,7 +24,7 @@ _Pre-reqs.:_
     * board-id `var_ID=$(ioreg -p IODeviceTree -r -n / -d 1 | grep board-id);var_ID=${var_ID##*<\"};var_ID=${var_ID%%\">};echo $var_ID`
     * hw.model `sysctl hw.model` (only the model, not "hw.model")
     * serialNumber `system_profiler SPHardwareDataType | awk '/Serial/ {print $4}'`
-  * Open .vmx file with *text editor of your choice
+  * Open .vmx file with a text editor of your choice
   * Add the following lines, and save the file:
     * board-id.reflectHost = "FALSE"
     * board-id = "board-id"
