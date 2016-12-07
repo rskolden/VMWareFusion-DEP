@@ -1,8 +1,8 @@
 # VMWareFusion-DEP
 
-*Contributors*
-_Martin Gunnarssson_
-_Various person from macadmins slack-channel_
+**Contributors**
+* _Martin Gunnarssson_
+* _Various person from macadmins slack-channel_
 
 This is a manual on how you can test your DEP environment without the need of constantly re-install a physical machine.
 
