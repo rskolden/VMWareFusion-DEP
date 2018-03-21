@@ -29,7 +29,7 @@ _Pre-reqs.:_
   * Add the following lines, and save the file:
     * board-id.reflectHost = "FALSE"
     * board-id = "board-id"
-    * hw.mode.reflectHost = "FALSE"
+    * hw.model.reflectHost = "FALSE"
     * hw.model = "model"
     * serialNumber.reflectHost = "FALSE"
     * serialNumber = "serialnumber"
